@@ -159,6 +159,11 @@ body{
     width: 100%;
     height: 385px;
 }
+h1 {
+    font-size: 100px;
+    font-family: sans sarif;
+}
+/*
 .container span{
     display: block;
     text-transform: uppercase;
@@ -202,3 +207,4 @@ body{
     }
     
 }
+*/
