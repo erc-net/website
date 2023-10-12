@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- *******  Link To CSS Style Sheet  ******* -->
+	<link rel="stylesheet" type="text/css" href="../styles/style2.css">
+
+	<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact Section</title>
+	<style>
+		body{
+				margin: 0;
+				padding: 0;
+				background-image: url(../bacs/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+    }
+		.navbar {
+			overflow: hidden;
+			background-color: #161515;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		/* Style the links inside the navigation bar */
+		.navbar a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 30px;
+		}
+		
+		/* Change the background color of the active link */
+		.navbar a.info:hover {
+			background-color: dodgerblue;
+			color: white;
+			transition:  0.5s ease-in;
+		}
+		.navbar a.active {
+			background-color: dodgerblue;
+			color: white;
+		}
+		.navbar a.active:hover {
+			color: black;
+			transition: 0.5s ease-in;
+		}
+		/* Hide the link that should open and close the navbar on small screens */
+		.navbar .icon {
+			display: none;
+		}
+
+		
+		/* Responsive navigation bar */
+		@media screen and (max-width: 770px) {
+			/* Hide links on small screens except for the link that should open and close the navbar */
+			.navbar a:not(:first-child) {
+				display: none;
+			}
+			
+			/* Show the link that should open and close the navbar */
+			.navbar a.icon {
+				float: right;
+				display: block;
+			}
+			
+			/* When the link that should open and close the navbar is clicked, show/hide the links inside it */
+			.navbar.responsive .icon {
+				background-color: hsl(0, 100%, 99%);
+			}
+			
+			.navbar.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+			
+			/* Fix the navbar at the top */
+			.navbar.responsive {
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+			
+			body {
+				margin-top: 50px; /* Add margin to body to avoid content overlapping with navbar */
+			}
+			.navbar img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80px;
+      height: auto;
+    }
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation bar -->
+<div class="navbar" id="myNavbar">
+	<a style="background-color: dodgerblue; color: rgb(255, 255, 255);
+			margin-right: 100px;
+			">E-SOLUTIONS</a>
+  <a href="../index.html" class="info">Home</a>
+  <a href="About.html" class="info">About</a>
+  <a href="other-pages/Contact.html" class="active">Contact</a>
+  <a href="#" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	<div class="container">
+		<main class="row">
+			
+			<!--  *******   Left Section (Column) Starts   *******  -->
+
+			<section class="col left">
+				
+				<!--  *******   Title Starts   *******  -->
+
+				<div class="contactTitle">
+					<h2>Get In Touch</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				</div>
+
+				<!--  *******   Title Ends   *******  -->
+
+				<!--  *******   Contact Info Starts   *******  -->
+
+				<div class="contactInfo">
+					
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="details">
+							<span>Phone</span>
+							<span>+263 77 779 9316</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="details">
+							<span>Email</span>
+							<span>esolutions23@gmail.com</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="details">
+							<span>Location</span>
+							<span>Mzilikazi, Bulawayo, Zimbabwe</span>
+						</div>
+					</div>
+
+				</div>
+
+				<!--  *******   Contact Info Ends   *******  -->
+
+				<!--  *******   Social Media Starts   *******  -->
+
+				<div class="socialMedia">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+
+				<!--  *******   Social Media Ends   *******  -->
+
+			</section>
+
+			<!--  *******   Left Section (Column) Ends   *******  -->
+
+			<!--  *******   Right Section (Column) Starts   *******  -->
+
+			<section class="col right">
+				
+				<!--  *******   Form Starts   *******  -->
+
+				<form class="messageForm">
+					
+					<div class="inputGroup halfWidth">
+						<input type="text" name="" required="required">
+						<label>Your Name</label>
+					</div>
+
+					<div class="inputGroup halfWidth">
+						<input type="email" name="" required="required">
+						<label>Email</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<input type="text" name="" required="required">
+						<label>Subject</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<textarea required="required"></textarea>
+						<label>Say Something</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<button>Send Message</button>
+					</div>
+
+				</form>
+
+				<!--  *******   Form Ends   *******  -->
+			</section>
+
+			<!--  *******   Right Section (Column) Ends   *******  -->
+
+		</main>
+	</div>
+	
+</body>
+</html>
